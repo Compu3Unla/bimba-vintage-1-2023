@@ -94,3 +94,111 @@ line-height: 24px;
 
 color: #000000;
 }
+
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 33px;
+
+position: absolute;
+width: 1920px;
+height: 664px;
+left: 2px;
+top: 2437px;
+background: #E5E5E5;
+}
+
+.footer1{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 56px 45px 36px;
+gap: 91px;
+
+width: 1920px;
+height: 440px;
+
+border-bottom: 2px solid #A2A2A2;
+}
+
+h3{
+font-family: 'Montserrat';
+font-style: bold;
+font-weight: 700;
+font-size: 22px;
+line-height: 30px;
+letter-spacing: 0.01em;
+color: #000000;
+}
+
+.p4{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+
+}
+
+.lifooter{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #000000;
+}
+
+.queesbimba{
+width: 318.72px;
+height: 358px;
+}
+
+.categorias{
+width: 247.28px;
+height: 357.84px;
+}
+
+.categorias2{
+width: 240px;
+height: 273px;
+}
+
+.mediosdepago{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 2px 142px;
+gap: 171px;
+width: 1919.82px;
+height: 92px;
+}
+
+.copyright{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 0px;
+gap: 873px;
+width: 1920px;
+height: 66px;
+background: #0F0F0F;
+}
+
+.p5{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #FFFFFF;
+}
