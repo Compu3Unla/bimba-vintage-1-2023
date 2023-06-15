@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+position: relative;
+width: 1920px;
+height: 3097px;
+
+background: #FFFFFF;
+}
+main{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding:0px;
+gap: 76px;
+
+position: absolute;
+width: 1867px;
+height: 2193px;
+left: 0px;
+top: 195px;
+}
+.imagenprincipal {
+width: 1146px;
+height: 2193px;
+background:url("imagen/90s Babies.jpg");
+padding-right: 30px;
+}
+
+section{
+	gap: 76px;
+}
+
+.politica {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+width: 645px;
+height: 1820px;
+}
+
+h4{
+width: 402px;
+height: 270px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 78px;
+
+color: #000000;
+}
+
+.p1{
+	width: 645px;
+height: 71px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+
+.p2{
+width: 641px;
+height: 483px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+.p3{
+width: 645px;
+height: 114px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
