@@ -85,176 +85,12 @@ h4 {
 }
 
 
-
-/*-------------TITULO---------------*/
-
-.Titulo{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 40px;
-	gap: 20px;
-}
-
-#bajada {
-	text-align: center;
-}
-
-.bajada_cuadro {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	gap: 40px;
-}
-
-ul { 
-display: flex;
-flex-direction: column;
-gap: 14px;
-width: 200px;
-}
-
-.vestidos{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding-top: 40px;
-	gap: 17px;
-}
-
-/*--------------COLUMNA FILTROS-----------*/
-
-.filtros {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 30px;
-	max-width: 200px;
-}
-
-.filtros_checkbox{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 12px;
-}
-
-label { 
-	padding-left: 8px;
-}
-
-
-/*--------------COLUMNA ARTICULOS-----------*/
-
-.articulos{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 30px;
-}
-.articulos_filas {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	gap: 10px;
-}
-
-
-/*no sé porque se mueve todo cuando se abre el hover :( */
-
-/*--------------CARD PRODUCTO-----------*/
-
-.card_producto {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px 10px 10px 10px;
-	gap: 20px;
-}
-
-.card_producto:hover{
-	box-shadow: 1px 1px 8px rgba(0,0,0,0.20);
-	border-radius: 10px;
-}
-
-.foto_card_producto {
-	width: 200px;
-	height: 280px;
-	padding-bottom: 5px;
-}
-
-
-.card_datos{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 6px;
-}
-
-.card_botones{
-	display: none;
-}
-
-.card_producto:hover .card_botones {
-	display: block;
-	
-}
-
-/*----- ESTILOS TIPOGRAFÍCOS ----*/
-
-.card_precios {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 20px;
-	color: #000000;
-	}
-
-.card_cuotas{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 12px;
-	color: #000000
-}
-
-.card_boton_comprar {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 10px;
-	text-align: center;
-	color: #FFFFFF;
-	
-	background: #000000;
-	padding: 5px 10px 5px 10px;
-	border-radius: 20px;
-	
-	cursor: pointer;
-}
-
-.card_boton_ver{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 10px;
-	text-align: center;
-	color: #000000;
-	background-color: white;
-	
-	border: 2px solid #000000;
-	border-radius: 20px;
-	padding: 4px 10px 4px 10px;
-		
-	cursor: pointer;
-}
-
 		
 /*-------------------PRUEBAS -----------------*/
 #conte-item-carrusel{
-	height: 400px;
-	/*overflow: hidden;*/
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
 }
 
 .portada-item-carrusel {
@@ -278,4 +114,24 @@ label {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+}
+
+#conte-puntos{
+	display: flex;
+	justify-content: space-between;
+	gap:20px;
+}
+
+#conte-puntos a{
+	font-size: 70px;
+	color:rgba(110,110,110,0.65)
+}
+
+img {
+	width: 100%;
+	height: 100%;
 }
