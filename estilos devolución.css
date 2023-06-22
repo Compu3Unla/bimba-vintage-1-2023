@@ -119,10 +119,7 @@ footer{
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 0px;
-gap: 33px;
-
-/*position: absolute;*/
+justify-content: space-between;
 width: 100%;
 height: 664px;
 background: #E5E5E5;
@@ -156,6 +153,7 @@ color: #000000;
 .queesbimba{
 width: 318.72px;
 height: 358px;
+
 }
 
 .categorias{
