@@ -157,7 +157,7 @@ label {
 	flex-direction: row;
 	align-items: flex-start;
 	gap: 10px;
-	height: 900px;
+	height: 420px;
 }
 
 
@@ -253,30 +253,3 @@ label {
 
 		
 /*-------------------PRUEBAS -----------------*/
-#conte-item-carrusel{
-	height: 400px;
-	/*overflow: hidden;*/
-}
-
-.portada-item-carrusel {
-	background-color:rgba(224,111,112,1.00);
-	height: 100%;
-	width: 100%;
-	position: relative;
-}
-
-.portada-tarjeta-carrusel{
-	background-color: aqua;
-	height: 100%;
-
-}
-
-.portada-carrusel-botones {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
