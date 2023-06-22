@@ -338,6 +338,10 @@ flex-direction: column;
 padding-left: 91px;
 }
 
+.imgsdecontactos{
+width: 25px;
+height: 25px;
+}
 .sigamosconectados{
 width: 500px;
 height: 108.875px;
@@ -357,20 +361,27 @@ width: 100%;
 height: 92px;
 }
 
-
-
 .imgsdepago{
 display: flex;
 align-items: center;
+width:100%;
+height: 28px;
 }
+
+/*aca creé un div para el qr pero no aparece en nigun lado*/
+.qr{
+width: 100%;
+height:27px;
+}
+
 .copyright{
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 20px 0px;
-gap: 873px;
-width: 1920px;
+gap: 0px;
+width: 100%;
 height: 66px;
 background: #0F0F0F;
 }
