@@ -12,9 +12,20 @@
 
 @media {}
  
+
+ #barra-busqueda { 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 9px 30px;
+}  
+
+.fa-magnifying-glass {
+	position:relative;
+	right: 20px;
 	
-	
-	
+}
+
 
 h1 {
 	color: #000000;
@@ -120,8 +131,7 @@ color: #000000;
 
 .titulo {
 	
-	
-	
+	padding-left: 20px;
 }
 
 main {
@@ -177,7 +187,7 @@ color: #000000;
 }
 
 .iconowhatsapp {
-	position:absolute;
+position:absolute;
 width: 49px;
 height: 49px;
 left: 1850px;
