@@ -246,3 +246,14 @@ line-height: 22px;
 color: #000000;
 
 }
+
+/*----------------PROBANDO MEDIA------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+	 body {
+font-size: 28px;
+ }
+	.imgprincipal{
+	width: 50%;
+	}
+}
