@@ -162,13 +162,18 @@ section {
 }
 
 
-.informacion-texto {
+p {
 	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	color: #000000;
-	}
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+	padding: 20px;
+
+color: #000000;
+	gap:20px;
+	
+}
 
 .parrafoenbold {
 	
@@ -185,7 +190,7 @@ color: #000000;
 position:absolute;
 width: 49px;
 height: 49px;
-right: 5px;
+left: 1850px;
 top: 963px;
 
 }
