@@ -18,6 +18,7 @@ body  {
 	color: #000000; 
 }
 
+
 /*---------------------------HEADER-------------------------- */
 
 header {
@@ -75,6 +76,13 @@ h1 {
 	width: 100%;
 	background-color: black; 
 	display: flex;
+<<<<<<< HEAD
+=======
+	flex-direction: row;
+	/*
+	align-self: flex-end;*/
+	align-content:center;
+>>>>>>> origin/main
 	padding: 20px;
 	position: absolute;
 	top:120px;	
@@ -82,10 +90,14 @@ h1 {
 
 
 nav ul {
-	font-family: montserrat;
 	font-style: normal;
+<<<<<<< HEAD
 	font-size: 15px;
 	color: white;
+=======
+    font-size: 15px;
+    color: #000000;
+>>>>>>> origin/main
 	display: flex;
 	flex-direction: row;
 }
@@ -101,6 +113,21 @@ nav ul {
 
 
 
+<<<<<<< HEAD
+=======
+
+header {
+	width: 100%;
+	height: 140px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+    gap: 30px;
+	padding-top: 30px;
+	align-items: center;
+}
+
+>>>>>>> origin/main
 .iconos {  
 	display: flex;
 	flex-direction: row;
@@ -111,19 +138,16 @@ nav ul {
 	min-width: 290px;
 }
 
-.titulo {
-	padding-left: 20px;
-}
+
 
 /*-------------------------------------------------MAIN--------------------------------------------------*/
-/*
+
 main {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
-*/
+
 
 /*-------------------------------------------estilos tipográficos generales---------------------------------*/
 h2{
@@ -133,9 +157,8 @@ h2{
 	font-size: 34px;
 	text-align: center;
 	color: #000000;
-	
-	padding: 30px 0px 30px;
 }
+
 
 h3 {
 	font-family: 'Montserrat';
@@ -327,6 +350,7 @@ a {
 
 /*-------------------------------------------- QUIENES SOMOS HTML ------------------------------------------*/
 
+
 .titulo {
 	
 	padding-left: 20px;
@@ -346,25 +370,20 @@ a {
 	padding-right: 40px;
 	position: relative;
 	top:  320px;
+	gap:20px;
 }
 
-p {
-	font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
+.informacion-texto {
+font-size: 15px;
 color: #000000;
 }
 
 .parrafoenbold {
-	
-	font-family: 'Montserrat';
-font-style: italic;
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
-
-color: #000000;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 18px;
+	color: #000000;
+	padding-top: 10px;
 }
 
 .iconowhatsapp {
@@ -376,16 +395,223 @@ top: 963px;
 
 }
 
+
+/*----- footer de maca luego borrar----*/
+footer {
+	background: #E5E5E5;
+	display: flex;
+width: 100%;
+
+}
+
+.pestanias {
+	
+<<<<<<< HEAD
+}
+
+/*--------------------------------------------------------------------EMPIEZA FOOTER-----------------------*/
+
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 664px;
+background: #E5E5E5;
+}
+
+.footer1{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 56px 45px 36px;
+gap: 91px;
+
+width: 100%;
+height: 440px;
+
+border-bottom: 2px solid #A2A2A2;
+}
+
+
+.lifooter{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #000000;
+}
+
+/*------------------divs de footer---------------------*/
+.queesbimba{
+width: 318.72px;
+height: 358px;
+
+}
+
+.categorias{
+width: 300px;
+height: 357.84px;
+padding-left: 91px;
+}
+
+.categorias2{
+width: 400px;
+height: 273px;
+padding-left: 91px;
+}
+
+
+/*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
+.contactanos{
+display: flex;
+width: 266.663px;
+flex-direction: column;
+padding-left: 91px;
+}
+
+.imgsdecontactos{
+width: 25px;
+height: 25px;
+}
+.sigamosconectados{
+width: 500px;
+height: 108.875px;
+flex-shrink: 0;
+padding-left: 91px;
+}
+
+/*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
+.mediosdepago{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 2px 142px;
+gap: 171px;
+width: 100%;
+height: 92px;
+}
+
+.imgsdepago{
+display: flex;
+align-items: center;
+width:100%;
+height: 28px;
+}
+
+/*aca creé un div para el qr pero no aparece en nigun lado*/
+.qr{
+width: 100%;
+height:27px;
+}
+
+.copyright{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 0px;
+gap: 0px;
+width: 100%;
+height: 66px;
+background: #0F0F0F;
+}
+
+.p5{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #FFFFFF;
+}
+
+h3{
+font-family: 'Montserrat';
+font-style: bold;
+font-weight: 700;
+font-size: 22px;
+line-height: 30px;
+letter-spacing: 0.01em;
+color: #000000;
+}
+
+
+.p4{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+
+}
+
+/*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
+=======
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 440px;
+padding: 40px 40px 40px 40px;
+align-items: flex-start;
+gap: 50px;
+	
+color: #000;
+font-size: 16px;
+font-family: Montserrat;
+	
+}
+
+.primerdiv {
+	
+	width: 320px;
+}
+
+
+ul {
+	list-style: none;
+}
+
+
+.pdefooter {
+	color: #000;
+font-size: 16px;
+font-family: Montserrat;
+line-height: 22px;
+	
+}
+
+h4 {
+	
+	color: #000;
+font-size: 22px;
+font-family: Open Sans;
+font-weight: 700;
+letter-spacing: 0.22px;
+	
+}
+
+
 /*-------------------------------------------- VESTIDOS HTML ------------------------------------------*/
 
 /*-------------TITULO---------------*/
-
 .titulo_vestidos{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 40px;
 	gap: 20px;
+}
+.titulo_vestidos h2 {
+	padding: 20px 0px 20px 0px;
 }
 
 #bajada {
@@ -452,3 +678,4 @@ label {
 	height: 420px;
 }
 
+>>>>>>> origin/main
