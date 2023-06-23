@@ -76,16 +76,10 @@ h1 {
 	width: 100%;
 	background-color: black; 
 	display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/main
 	flex-direction: row;
 	/*
 	align-self: flex-end;*/
 	align-content:center;
->>>>>>> origin/main
 	padding: 20px;
 	position: absolute;
 	top:120px;	
@@ -94,13 +88,10 @@ h1 {
 
 nav ul {
 	font-style: normal;
-<<<<<<< HEAD
 	font-size: 15px;
 	color: white;
-=======
     font-size: 15px;
     color: #000000;
->>>>>>> origin/main
 	display: flex;
 	flex-direction: row;
 }
@@ -115,10 +106,6 @@ nav ul {
 }
 
 
-
-<<<<<<< HEAD
-=======
-
 header {
 	width: 100%;
 	height: 140px;
@@ -130,7 +117,6 @@ header {
 	align-items: center;
 }
 
->>>>>>> origin/main
 .iconos {  
 	display: flex;
 	flex-direction: row;
@@ -409,7 +395,7 @@ width: 100%;
 
 .pestanias {
 	
-<<<<<<< HEAD
+
 }
 
 /*--------------------------------------------------------------------EMPIEZA FOOTER-----------------------*/
@@ -558,7 +544,7 @@ color: #000000;
 }
 
 /*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
-=======
+footer {
 display: flex;
 flex-direction: row;
 width: 100%;
@@ -680,5 +666,3 @@ label {
 	gap: 10px;
 	height: 420px;
 }
-
->>>>>>> origin/main
