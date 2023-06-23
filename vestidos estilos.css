@@ -88,7 +88,7 @@ h4 {
 
 /*-------------TITULO---------------*/
 
-.Titulo{
+.titulo_vestidos{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -160,8 +160,6 @@ label {
 	height: 420px;
 }
 
-
-/*no sé porque se mueve todo cuando se abre el hover :( */
 
 /*--------------CARD PRODUCTO-----------*/
 
