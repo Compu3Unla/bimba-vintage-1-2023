@@ -34,7 +34,7 @@ width: 100%;
 width: 1300px;
 /*antes puse height en: auto, pero me quedaba chic ala img*/
 height: 1600px; 
-background:url("img/img pantalla devolución/devolucion.jpg");
+background:url("img/imgs-pantalla-devolución/devolucion.jpg");
 background-repeat: no-repeat;
 background-size: contain;
 object-fit:cover;
@@ -43,7 +43,7 @@ object-fit:cover;
 .capturadepantalla{
 width: 402px;
 height: 646px; 
-background:url("img/img pantalla devolución/devolucioncaptura_.png");
+background:url("img/imgs-pantalla-devolución/devolucioncaptura_.png");
 background-repeat: no-repeat;
 background-size: contain;
 object-fit:cover;
