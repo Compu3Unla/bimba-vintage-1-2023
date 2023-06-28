@@ -148,8 +148,6 @@ h4 {
 	color: #000000;
 }
 
-}
-
 /*---------------------------------------------------------- INDEX ------------------------------------------------------*/
 
 
@@ -635,8 +633,9 @@ gap: 21px;
 .imgprincipal {
 display: flex;
 align-content: flex-start;
-width: 1200px;
-height: 1740px; 
+width: 60%;
+height: 100%;
+min-height: 1146px;
 background:url("img/imgs-pantalla-devolución/devolucion.jpg");
 background-repeat: no-repeat;
 background-size: contain;
@@ -661,43 +660,26 @@ align-content: flex-start;
 width: 100%;
 
 }
-/*-----------------------BLOQUES DE TEXTO/BODY-----------------------*/
 
 /*la section de los bloques:*/
 .bloquepolitica{
-width: auto;
-padding-left: 40px;
+	position:static;
+	width: auto;
+	padding-left: 40px;
+	top: 500px;
 }
 
-/*el titulo principal*/
-h4{
-/*le determino height para que haya un espacio entre el título y los bloques de texto inmersivo*/
-width: 402px;
-height: 270px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 64px;
-color: #000000;
-}
-
-/*se superpone imagen con texto, antes le puse un padding pero el numero era muy grande*/
 .parrafos{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-width: 645px;
-color: #000000;
-
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	width: 645px;
+	color: #000000;
+	gap: 30px;
 }
-
-.parrafo1{
-display: flex;
-width: 645px;
-flex-direction: column;
-}
-
 
 /*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
