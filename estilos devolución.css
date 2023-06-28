@@ -31,9 +31,8 @@ width: 100%;
 
 /*-----------------------IMAGENENES-----------------------*/
 .imgprincipal {
-width: 1300px;
-/*antes puse height en: auto, pero me quedaba chic ala img*/
-height: 1600px; 
+width: 1146px;
+height: 2193px; 
 background:url("img/imgs-pantalla-devolución/devolucion.jpg");
 background-repeat: no-repeat;
 background-size: contain;
@@ -65,8 +64,13 @@ width: auto;
 height: 270px;
 }
 
+.bold {
+font-family: 'Montserrat';
+font-style: 600;	
+}
+
 /*el titulo principal*/
-h4{
+h5{
 /*le determino height para que hya un espacio entre el título y los bloques de texto inmersivo*/
 width: 402px;
 height: 270px;
@@ -113,13 +117,13 @@ height: 114px;
 flex-direction: column;
 }
 
-/*-----------------------FOOTER-----------------------*/
+/*--------------------------------------EMPIEZA FOOTER-------------------------------------------*/
 
 footer{
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+/*justify-content: space-between;*/
 width: 100%;
 height: 664px;
 background: #E5E5E5;
@@ -130,12 +134,9 @@ box-sizing: border-box;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 56px 45px 36px;
-gap: 91px;
-
+padding: 20px 0px 20px 40px;;
+gap: 40px;
 width: 100%;
-height: 440px;
-
 border-bottom: 2px solid #A2A2A2;
 }
 
@@ -145,7 +146,6 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 21px;
 color: #000000;
 }
 
@@ -159,57 +159,100 @@ height: 358px;
 .categorias{
 width: 300px;
 height: 357.84px;
-padding-left: 91px;
+
 }
 
 .categorias2{
 width: 400px;
 height: 273px;
-padding-left: 91px;
 }
 
 
-/*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
+
 .contactanos{
+
 display: flex;
-width: 266.663px;
+width: 250px;
+flex-direction: row;
+gap: 10px;
+
+}
+
+.imgsdecontactos{
+display: flex;
 flex-direction: column;
-padding-left: 91px;
+width: 20px;
+height: 25px;	
+gap:15px;
+	
+}
+.contactanos_info{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .sigamosconectados{
-width: 500px;
-height: 108.875px;
+width: 250px;
+height: auto;
 flex-shrink: 0;
-padding-left: 91px;
+/*padding-left: 91px;*/
+}
+
+.sigamosconectados img {
+	width: 20px;
+	height: 20px;
+	
+
+	
 }
 
 /*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
+
 .mediosdepago{
 display: flex;
 flex-direction: row;
-justify-content: center;
 align-items: center;
-padding: 2px 142px;
-gap: 171px;
+
+padding: 0px 30px;
+gap: 20px;
 width: 100%;
 height: 92px;
 }
 
-
-
 .imgsdepago{
 display: flex;
 align-items: center;
+gap: 10px;
+object-fit: cover;
+
 }
+
+
+.codigo-seguridad{
+display: flex;
+align-content: flex-end;
+	
+}
+
+
+/*aca creé un div para el qr pero no aparece en nigun lado*/
+.qr img{
+width: 60px;
+height:80px;
+
+
+}
+
 .copyright{
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 padding: 20px 0px;
-gap: 873px;
-width: 1920px;
+padding-left: 20px;
+gap: 0px;
+width: 100%;
 height: 66px;
 background: #0F0F0F;
 }
@@ -234,6 +277,7 @@ font-size: 22px;
 line-height: 30px;
 letter-spacing: 0.01em;
 color: #000000;
+margin-bottom: 30px;
 }
 
 
@@ -247,8 +291,17 @@ color: #000000;
 
 }
 
-/*----------------PROBANDO MEDIA------------------------------------------------------------------------*/
+.copyright img {
+	width: 20px;
+	height: 20px;
+}
 
+
+/*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
+
+
+/*----------------PROBANDO MEDIA------------------------------------------------------------------------*/
+/*
 @media screen and (max-width: 600px) {
 	 body {
 font-size: 28px;
@@ -257,3 +310,5 @@ font-size: 28px;
 	width: 50%;
 	}
 }
+
+*/
