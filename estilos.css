@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 } 
 
-body  {
+body{
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
@@ -24,17 +24,25 @@ body  {
 
 /*---------------------------HEADER-------------------------- */
 
-header {
+header{
 	width: 100%;
 	height: auto;
 	background-color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+<<<<<<< HEAD
+	gap: 20px;
+	padding-top: 30px;
+	
+=======
 	gap: 10px;
 	padding-top: 30px;	
+>>>>>>> origin/main
 	
 }
+
+
 
 h1 {
 	color: #000000;
@@ -51,19 +59,23 @@ h1 {
 	border-radius: 20px;
 }
 
-
- #barra-busqueda { 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 9px 30px;
-}  
-
-.fa-magnifying-glass {
-	position:relative;
-	right: 20px;
-	
+.botondebarrabusqueda {
+	background-color:white;
+	position: relative;
+	right: 30px;
+	top:1px;
 }
+
+
+
+.barra-busqueda input {
+	height: 40px;
+	border-radius: 10px;
+}
+
+ 
+
+
 
 .headericonos {
 	
@@ -71,7 +83,7 @@ h1 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
-	gap: 30px;
+	width: 70%;
 }
 
 
@@ -81,17 +93,20 @@ h1 {
 	padding: 20px;
 	color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
+	gap:40px;
 	
 }
 
 
 .botonera  ul {
+	width: 100%;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
-	
+	justify-content: center;
+	gap:30px;
 }
 
 .botonera a {
@@ -100,14 +115,13 @@ h1 {
 }
 
 
-.iconos {  
+.iconosdeheader {  
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content:space-around;
 	align-items: center;
 	padding: 0px;
-	gap: 40px;
-	min-width: 290px;
+	width: 250px;
 }
 
 
@@ -136,7 +150,7 @@ h3 {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 50px;
 	color: #000000;
 }
 
@@ -146,6 +160,8 @@ h4 {
 	font-weight: 700;
 	font-size: 14px;
 	color: #000000;
+}
+
 }
 
 /*---------------------------------------------------------- INDEX ------------------------------------------------------*/
@@ -197,6 +213,15 @@ h4 {
 	position: relative;	
 }
 
+<<<<<<< HEAD
+/*  img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+} */
+
+=======
+>>>>>>> origin/main
 .portada-carrusel-botones {
 	height: 100%;
 	width: 100%;
@@ -345,8 +370,11 @@ a {
 
 .titulo {
 	
-	padding-left: 20px;
+	padding-right: 20px;
+	
 }
+
+
 
 .informacion {
 	display: flex;
@@ -355,19 +383,31 @@ a {
 
 .quienessomos {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	width: 100%;
 	height: auto;
-	padding-left: 40px;
-	padding-right: 40px;
-	position: relative;
-	top:  320px;
-	gap:20px;
+
 }
 
+<<<<<<< HEAD
+.parrafodequienessomos p {
+	
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+padding-bottom: 20px;
+
+color: #000000;
+gap:20px;
+	
+	
+=======
 .informacion-texto {
 	font-size: 15px;
 	color: #000000;
+>>>>>>> origin/main
 }
 
 .parrafoenbold {
@@ -377,6 +417,19 @@ a {
 	color: #000000;
 	padding-top: 10px;
 }
+
+
+
+
+.texto {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 20px;
+}
+
+
+
 
 .iconowhatsapp {
 	position:absolute;
@@ -595,6 +648,9 @@ align-items: center;
 	color: #FFFFFF;
 }
 
+<<<<<<< HEAD
+
+=======
 .p4{
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -633,9 +689,8 @@ gap: 21px;
 .imgprincipal {
 display: flex;
 align-content: flex-start;
-width: 60%;
-height: 100%;
-min-height: 1146px;
+width: 1200px;
+height: 1740px; 
 background:url("img/imgs-pantalla-devolución/devolucion.jpg");
 background-repeat: no-repeat;
 background-size: contain;
@@ -660,26 +715,44 @@ align-content: flex-start;
 width: 100%;
 
 }
+/*-----------------------BLOQUES DE TEXTO/BODY-----------------------*/
 
 /*la section de los bloques:*/
 .bloquepolitica{
-	position:static;
-	width: auto;
-	padding-left: 40px;
-	top: 500px;
+width: auto;
+padding-left: 40px;
 }
 
-.parrafos{
-	display: flex;
-	flex-direction: column;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	width: 645px;
-	color: #000000;
-	gap: 30px;
+/*el titulo principal*/
+h4{
+/*le determino height para que haya un espacio entre el título y los bloques de texto inmersivo*/
+width: 402px;
+height: 270px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+color: #000000;
 }
+>>>>>>> origin/main
+
+/*se superpone imagen con texto, antes le puse un padding pero el numero era muy grande*/
+.parrafos{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+width: 645px;
+color: #000000;
+
+}
+
+.parrafo1{
+display: flex;
+width: 645px;
+flex-direction: column;
+}
+
 
 /*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
