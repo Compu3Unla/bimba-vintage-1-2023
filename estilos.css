@@ -508,7 +508,7 @@ color: #000000;
 
 
 main{
-display: inline-flex;
+/*display: inline-flex;*/
 align-items: center;
 gap: 0px;
 width: 100%;
@@ -622,7 +622,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 width: 100%;
-height: 664px;
+/*height: 664px;*/
 background: #E5E5E5;
 }
 
@@ -633,7 +633,7 @@ flex-direction: row;
 align-items: flex-start;
 padding: 50px 40px 30px;
 width: 100%;
-height: 440px;
+/*height: 440px;*/
 border-bottom: 2px solid #A2A2A2;
 }
 
@@ -673,6 +673,12 @@ display: flex;
 width: 266.663px;
 flex-direction: column;
 padding: 0px 40px 0px 50px;
+}
+
+.imgs-contactanos img{
+width:auto;
+height: auto;
+	
 }
 
 .sigamosconectados{
@@ -769,7 +775,7 @@ color: #000000;
 
 
 main{
-display: inline-flex;
+/*display: inline-flex;*/
 align-items: center;
 gap: 0px;
 width: 100%;
@@ -777,9 +783,13 @@ width: 100%;
 
 /*-----------------------IMAGENENES-----------------------*/
 .imgprincipal {
-width: 1300px;
+display: flex;
+align-content: flex-start;
+	
+	
+width: 1200px;
 /*antes puse height en: auto, pero me quedaba chic ala img*/
-height: 1600px; 
+height: 2196px; 
 background:url("img/imgs-pantalla-devolución/devolucion.jpg");
 background-repeat: no-repeat;
 background-size: contain;
