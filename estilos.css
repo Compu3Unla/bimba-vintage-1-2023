@@ -612,6 +612,112 @@ color: #000000;
 }
 /*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
 
+/*---------------------------EMPIEZA HTML DEVOLUCION-------------------------------------------------------*/
+
+body{
+/*position: relative;*/
+width: 100%;
+background: #FFFFFF;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #000000; 
+}
+
+
+main{
+display: inline-flex;
+align-items: center;
+gap: 0px;
+width: 100%;
+}
+
+/*-----------------------IMAGENENES-----------------------*/
+.imgprincipal {
+width: 1300px;
+/*antes puse height en: auto, pero me quedaba chic ala img*/
+height: 1600px; 
+background:url("img/imgs-pantalla-devolución/devolucion.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+object-fit:cover;
+}
+
+.capturadepantalla{
+width: 402px;
+height: 646px; 
+background:url("img/imgs-pantalla-devolución/devolucioncaptura_.png");
+background-repeat: no-repeat;
+background-size: contain;
+object-fit:cover;
+padding-bottom: 680px;
+}
+
+/*esta es la section de la img*/
+.politica {
+display: flex;
+flex-direction: row;
+align-content: flex-start;
+gap:59px;
+}
+/*-----------------------BLOQUES DE TEXTO/BODY-----------------------*/
+
+/*la section de los bloques:*/
+.bloquepolitica{
+width: auto;
+height: 270px;
+}
+
+/*el titulo principal*/
+h4{
+/*le determino height para que hya un espacio entre el título y los bloques de texto inmersivo*/
+width: 402px;
+height: 270px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 78px;
+color: #000000;
+}
+
+/*en el div parrafos, agregué padding para separar la img del texto (antes se superponía todo feo)*/
+.parrafos{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+width: 645px;
+height: 114px;
+color: #000000;
+padding-bottom: 550px;
+}
+
+.parrafo1{
+display: flex;
+width: 645px;
+height: 71px;
+flex-direction: column;
+}
+
+.parrafo2{
+display: flex;
+width: 641px;
+height: 542px;
+flex-direction: column;
+
+}
+
+.parrafo3{
+display: flex;
+width: 645px;
+height: 114px;
+flex-direction: column;
+}
+
+/*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
 
 /*-------------------------------------EMPIEZA HTML CONTACTO FORMULARIO-------------------------------*/
 
