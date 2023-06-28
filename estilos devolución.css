@@ -31,9 +31,9 @@ width: 100%;
 
 /*-----------------------IMAGENENES-----------------------*/
 .imgprincipal {
-width: 1300px;
+width: 1146px;
 /*antes puse height en: auto, pero me quedaba chic ala img*/
-height: 1600px; 
+height: 2193px; 
 background:url("img/imgs-pantalla-devolución/devolucion.jpg");
 background-repeat: no-repeat;
 background-size: contain;
@@ -250,7 +250,7 @@ color: #000000;
 }
 
 /*----------------PROBANDO MEDIA------------------------------------------------------------------------*/
-
+/*
 @media screen and (max-width: 600px) {
 	 body {
 font-size: 28px;
@@ -259,3 +259,5 @@ font-size: 28px;
 	width: 50%;
 	}
 }
+
+*/
