@@ -28,7 +28,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 100px;
+	gap: 20px;
 	padding-top: 30px;
 	
 	
@@ -52,19 +52,20 @@ h1 {
 }
 
 .botondebarrabusqueda {
+	background-color:white;
 	position: relative;
-	right: 20px;
+	right: 30px;
 	top:1px;
 }
 
 
- #barra-busqueda { 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 9px 30px;
 
-}  
+.barra-busqueda input {
+	height: 40px;
+	border-radius: 10px;
+}
+
+ 
 
 
 
@@ -74,7 +75,7 @@ h1 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
-	gap: 30px;
+	width: 70%;
 }
 
 
@@ -106,14 +107,13 @@ h1 {
 }
 
 
-.iconos {  
+.iconosdeheader {  
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content:space-around;
 	align-items: center;
 	padding: 0px;
-	gap: 40px;
-	min-width: 290px;
+	width: 250px;
 }
 
 
@@ -377,18 +377,23 @@ a {
 	flex-direction: row;
 	width: 100%;
 	height: auto;
-	position: relative;
+
 }
 
-.texto {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	position: relative;
-	bottom:500px;
-	padding-left: 20px;
-}
+.parrafodequienessomos p {
+	
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+padding-bottom: 20px;
 
+color: #000000;
+gap:20px;
+	
+	
+}
 
 .parrafoenbold {
 	font-style: italic;
@@ -397,6 +402,19 @@ a {
 	color: #000000;
 	padding-top: 10px;
 }
+
+
+
+
+.texto {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 20px;
+}
+
+
+
 
 .iconowhatsapp {
 position:absolute;
