@@ -625,7 +625,7 @@ box-sizing: border-box;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 50px 250px 30px;
+padding: 50px 30px;
 border-bottom: 2px solid #A2A2A2;
 }
 
@@ -639,7 +639,7 @@ line-height: 21px;
 color: #000000;
 }
 
-footer h3 {
+footer- h3 {
 	padding-bottom: 20px;
 }
 /*------------------divs de footer---------------------*/
