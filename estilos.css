@@ -550,6 +550,12 @@ width: auto;
 height: 270px;
 }
 
+/*ESTA ES LA ETIQUETA SPAN, osea el texto en bold*/
+.bold{
+font-family: 'Montserrat';
+font-style: bold;
+font-size: 20px;
+}
 /*el titulo principal*/
 h5{
 /*le determino height para que hya un espacio entre el título y los bloques de texto inmersivo*/
