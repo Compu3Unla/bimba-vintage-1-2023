@@ -614,26 +614,26 @@ flex-direction: column;
 
 
 
-/*--------------------------------------EMPIEZA FOOTER-------------------------------------------*/
+/*-----------------------FOOTER-----------------------*/
 
 footer{
 display: flex;
 flex-direction: column;
 align-items: center;
-/*justify-content: space-between;*/
+justify-content: space-between;
 width: 100%;
 height: 664px;
 background: #E5E5E5;
 }
 
-.footer1{
+.footer-bloque{
 box-sizing: border-box;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 20px 0px 20px 40px;;
-gap: 40px;
+padding: 50px 40px 30px;
 width: 100%;
+height: 440px;
 border-bottom: 2px solid #A2A2A2;
 }
 
@@ -643,6 +643,7 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
+line-height: 21px;
 color: #000000;
 }
 
@@ -656,98 +657,57 @@ height: 358px;
 .categorias{
 width: 300px;
 height: 357.84px;
-/*padding-left: 91px;*/
+padding: 0px 40px 0px 50px;
 }
 
 .categorias2{
 width: 400px;
 height: 273px;
-/*padding-left: 91px;*/
+padding: 0px 40px 0px 50px;
 }
 
 
 /*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
 .contactanos{
 display: flex;
-width: 250px;
-flex-direction: row;
-/*padding-left: 91px;*/
-	gap: 10px;
-}
-
-.imgsdecontactos{
-display: flex;
+width: 266.663px;
 flex-direction: column;
-width: 20px;
-height: 25px;	
-gap:15px;
-	
-}
-.contactanos_info{
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+padding: 0px 40px 0px 50px;
 }
 
 .sigamosconectados{
-width: 250px;
-height: auto;
+width: 500px;
+height: 108.875px;
 flex-shrink: 0;
-/*padding-left: 91px;*/
-}
-
-.sigamosconectados img {
-	width: 20px;
-	height: 20px;
-	
-
-	
+padding: 0px 40px 0px 50px;
 }
 
 /*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
-
-/*falta ajustar el tamaño de las tarjetas, no me acuerdo como era */
 .mediosdepago{
 display: flex;
 flex-direction: row;
+justify-content: center;
 align-items: center;
-
-padding: 0px 30px;
-gap: 20px;
+padding: 2px 142px;
+gap: 171px;
 width: 100%;
 height: 92px;
 }
 
+
+
 .imgsdepago{
 display: flex;
 align-items: center;
-gap: 10px;
-object-fit: cover;
-
 }
-
-.imgsdepago img {
-	width: 50px;
-	height: auto;
-	
-}
-
-/*aca creé un div para el qr pero no aparece en nigun lado*/
-.qr img{
-width: 60px;
-height:80px;
-
-
-}
-
 .copyright{
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 20px 0px;
-gap: 0px;
-width: 100%;
+gap: 873px;
+width: 1920px;
 height: 66px;
 background: #0F0F0F;
 }
@@ -764,15 +724,6 @@ text-align: left;
 color: #FFFFFF;
 }
 
-h3{
-font-family: 'Montserrat';
-font-style: bold;
-font-weight: 700;
-font-size: 22px;
-line-height: 30px;
-letter-spacing: 0.01em;
-color: #000000;
-}
 
 
 .p4{
@@ -784,11 +735,138 @@ line-height: 22px;
 color: #000000;
 
 }
+/*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
 
-.copyright img {
-	width: 20px;
-	height: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------EMPIEZA HTML DEVOLUCION-------------------------------------------------------*/
+
+body{
+/*position: relative;*/
+width: 100%;
+background: #FFFFFF;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #000000; 
 }
 
 
-/*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
+main{
+display: inline-flex;
+align-items: center;
+gap: 0px;
+width: 100%;
+}
+
+/*-----------------------IMAGENENES-----------------------*/
+.imgprincipal {
+width: 1300px;
+/*antes puse height en: auto, pero me quedaba chic ala img*/
+height: 1600px; 
+background:url("img/imgs-pantalla-devolución/devolucion.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+object-fit:cover;
+}
+
+.capturadepantalla{
+width: 402px;
+height: 646px; 
+background:url("img/imgs-pantalla-devolución/devolucioncaptura_.png");
+background-repeat: no-repeat;
+background-size: contain;
+object-fit:cover;
+}
+
+/*esta es la section de la img*/
+.politica {
+display: flex;
+flex-direction: row;
+align-content: flex-start;
+
+}
+/*-----------------------BLOQUES DE TEXTO/BODY-----------------------*/
+
+/*la section de los bloques:*/
+.bloquepolitica{
+width: auto;
+height: 270px;
+}
+
+/*el titulo principal*/
+h4{
+/*le determino height para que haya un espacio entre el título y los bloques de texto inmersivo*/
+width: 402px;
+height: 270px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+color: #000000;
+}
+
+/*se superpone imagen con texto, antes le puse un padding pero el numero era muy grande*/
+.parrafos{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+width: 645px;
+height: 114px;
+color: #000000;
+
+}
+
+.parrafo1{
+display: flex;
+width: 645px;
+height: 71px;
+flex-direction: column;
+}
+
+
+/*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------EMPIEZA HTML CONTACTO FORMULARIO-------------------------------*/
+
+.contacto-info{
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+gap: 32px;
+}
+
+.contacto{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 21px;
+}
