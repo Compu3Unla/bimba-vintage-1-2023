@@ -664,3 +664,20 @@ color: #000000;
 
 
 /*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
+
+
+/*-------------------------------------EMPIEZA HTML CONTACTO FORMULARIO-------------------------------*/
+
+.contacto-info{
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+gap: 32px;
+}
+
+.contacto{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 21px;
+}
