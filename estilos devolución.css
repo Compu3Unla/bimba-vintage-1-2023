@@ -209,7 +209,6 @@ flex-shrink: 0;
 
 /*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
 
-/*falta ajustar el tamaño de las tarjetas, no me acuerdo como era */
 .mediosdepago{
 display: flex;
 flex-direction: row;
@@ -229,11 +228,13 @@ object-fit: cover;
 
 }
 
-.imgsdepago img {
-	width: 50px;
-	height: auto;
+
+.codigo-seguridad{
+display: flex;
+align-content: flex-end;
 	
 }
+
 
 /*aca creé un div para el qr pero no aparece en nigun lado*/
 .qr img{
