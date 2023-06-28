@@ -644,19 +644,17 @@ footer h3 {
 }
 /*------------------divs de footer---------------------*/
 .queesbimba{
-width: 318.72px;
+max-width: 318px;
 height: 358px;
 
 }
 
 .categorias{
-width: 300px;
 height: 357.84px;
 padding: 0px 40px 0px 50px;
 }
 
 .categorias2{
-width: 400px;
 height: 273px;
 padding: 0px 40px 0px 50px;
 }
@@ -665,7 +663,6 @@ padding: 0px 40px 0px 50px;
 /*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
 .contactanos{
 display: flex;
-width: 266.663px;
 flex-direction: column;
 padding: 0px 40px 0px 50px;
 }
@@ -686,7 +683,6 @@ height: auto;
 }
 
 .sigamosconectados{
-width: 500px;
 height: 108.875px;
 flex-shrink: 0;
 padding: 0px 40px 0px 50px;
