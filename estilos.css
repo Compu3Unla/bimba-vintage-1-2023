@@ -205,11 +205,6 @@ color: #000000;
 }
 
 
-img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
 
 .portada-carrusel-botones {
 	height: 100%;
@@ -436,7 +431,6 @@ ul {
 display: flex;
 flex-direction: column;
 gap: 14px;
-width: 200px;
 }
 
 .vestidos{
@@ -623,7 +617,6 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 width: 100%;
-/*height: 664px;*/
 background: #E5E5E5;
 }
 
@@ -632,9 +625,7 @@ box-sizing: border-box;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 50px 40px 30px;
-width: 100%;
-/*height: 440px;*/
+padding: 50px 250px 30px;
 border-bottom: 2px solid #A2A2A2;
 }
 
@@ -648,6 +639,9 @@ line-height: 21px;
 color: #000000;
 }
 
+footer h3 {
+	padding-bottom: 20px;
+}
 /*------------------divs de footer---------------------*/
 .queesbimba{
 width: 318.72px;
@@ -676,6 +670,15 @@ flex-direction: column;
 padding: 0px 40px 0px 50px;
 }
 
+.contactanos li{
+	display: flex;
+	align-items: center;
+}
+
+.contactanos img{
+	margin-right: 10px;
+}
+
 .imgs-contactanos img{
 width:auto;
 height: auto;
@@ -695,9 +698,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 2px 142px;
-gap: 171px;
-width: 100%;
+gap: 5%;
 height: 92px;
 }
 
@@ -713,10 +714,15 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 20px 0px;
-gap: 873px;
 width: 100%;
 height: 66px;
 background: #0F0F0F;
+}
+
+.imgsdepago ul{
+	display: flex;
+	align-items:center;
+	flex-direction: row;
 }
 
 .p5{
