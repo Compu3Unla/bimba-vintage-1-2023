@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 } 
 
-body  {
+body{
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
@@ -21,18 +21,20 @@ body  {
 
 /*---------------------------HEADER-------------------------- */
 
-header {
+header{
 	width: 100%;
 	height: auto;
 	background-color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
+	gap: 100px;
 	padding-top: 30px;
 	
 	
 }
+
+
 
 h1 {
 	color: #000000;
@@ -49,19 +51,22 @@ h1 {
 	border-radius: 20px;
 }
 
+.botondebarrabusqueda {
+	position: relative;
+	right: 20px;
+	top:1px;
+}
+
 
  #barra-busqueda { 
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	padding: 9px 30px;
+
 }  
 
-.fa-magnifying-glass {
-	position:relative;
-	right: 20px;
-	
-}
+
 
 .headericonos {
 	
@@ -79,17 +84,20 @@ h1 {
 	padding: 20px;
 	color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
+	gap:40px;
 	
 }
 
 
 .botonera  ul {
+	width: 100%;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
-	
+	justify-content: center;
+	gap:30px;
 }
 
 .botonera a {
@@ -134,7 +142,7 @@ h3 {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 50px;
 	color: #000000;
 }
 
@@ -196,12 +204,11 @@ h4 {
 	position: relative;	
 }
 
-
-img {
+/*  img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-}
+} */
 
 .portada-carrusel-botones {
 	height: 100%;
@@ -354,8 +361,11 @@ a {
 
 .titulo {
 	
-	padding-left: 20px;
+	padding-right: 20px;
+	
 }
+
+
 
 .informacion {
 	display: flex;
@@ -364,20 +374,21 @@ a {
 
 .quienessomos {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	width: 100%;
 	height: auto;
-	padding-left: 40px;
-	padding-right: 40px;
 	position: relative;
-	top:  320px;
-	gap:20px;
 }
 
-.informacion-texto {
-font-size: 15px;
-color: #000000;
+.texto {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	bottom:500px;
+	padding-left: 20px;
 }
+
 
 .parrafoenbold {
 	font-style: italic;
@@ -636,15 +647,7 @@ text-align: left;
 color: #FFFFFF;
 }
 
-h3{
-font-family: 'Montserrat';
-font-style: bold;
-font-weight: 700;
-font-size: 22px;
-line-height: 30px;
-letter-spacing: 0.01em;
-color: #000000;
-}
+
 
 
 .p4{
