@@ -32,8 +32,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	padding-top: 30px;
-	
+	padding-top: 30px;	
 	
 }
 
@@ -160,7 +159,6 @@ color: #000000;
 
 /*---------------------------------------------------------- INDEX ------------------------------------------------------*/
 
-	
 
 @media screen and (max-width: 1200px){
 	#conte-item-carrusel {
@@ -208,8 +206,6 @@ color: #000000;
 	position: relative;	
 }
 
-
-
 .portada-carrusel-botones {
 	height: 100%;
 	width: 100%;
@@ -243,8 +239,6 @@ a {
 	font-size: 70px;
 	color:rgba(110,110,110,0.65)
 }
-
-
 
  
 /*---------- CARD PRODUCTO ------------*/
@@ -355,9 +349,6 @@ a {
 }
 
 
-
-
-
 /*-------------------------------------------- QUIENES SOMOS HTML ------------------------------------------*/
 
 
@@ -404,8 +395,6 @@ a {
 	top: 963px;
 
 }
-
-
 
 
 /*-------------------------------------------- VESTIDOS HTML ------------------------------------------*/
@@ -591,16 +580,6 @@ h5{
 	flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*-----------------------FOOTER-----------------------*/
 
 footer{
@@ -613,12 +592,12 @@ footer{
 }
 
 .footer-bloque{
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 50px 250px 30px;
-	border-bottom: 2px solid #A2A2A2;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 50px 30px;
+border-bottom: 2px solid #A2A2A2;
 }
 
 
@@ -631,35 +610,31 @@ footer{
 	color: #000000;
 }
 
-footer h3 {
+footer- h3 {
 	padding-bottom: 20px;
 }
 /*------------------divs de footer---------------------*/
 .queesbimba{
-	width: 318.72px;
-	height: 358px;
-
+max-width: 318px;
+height: 358px;
 }
 
 .categorias{
-	width: 300px;
-	height: 357.84px;
-	padding: 0px 40px 0px 50px;
+height: 357.84px;
+padding: 0px 40px 0px 50px;
 }
 
 .categorias2{
-	width: 400px;
-	height: 273px;
-	padding: 0px 40px 0px 50px;
+height: 273px;
+padding: 0px 40px 0px 50px;
 }
 
 
 /*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
 .contactanos{
-	display: flex;
-	width: 266px;
-	flex-direction: column;
-	padding: 0px 40px 0px 50px;
+display: flex;
+flex-direction: column;
+padding: 0px 40px 0px 50px;
 }
 
 .contactanos li{
@@ -678,10 +653,9 @@ footer h3 {
 }
 
 .sigamosconectados{
-	width: 500px;
-	height: 108.875px;
-	flex-shrink: 0;
-	padding: 0px 40px 0px 50px;
+height: 108.875px;
+flex-shrink: 0;
+padding: 0px 40px 0px 50px;
 }
 
 /*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
@@ -693,9 +667,6 @@ footer h3 {
 	gap: 5%;
 	height: 92px;
 }
-
-
-
 .imgsdepago{
 display: flex;
 align-items: center;
@@ -748,8 +719,6 @@ align-items: center;
 .imgprincipal {
 display: flex;
 align-content: flex-start;
-	
-	
 width: 1200px;
 /*antes puse height en: auto, pero me quedaba chic ala img*/
 height: 2196px; 
@@ -817,15 +786,6 @@ flex-direction: column;
 
 
 /*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
-
-
-
-
-
-
-
-
-
 
 
 /*-------------------------------------EMPIEZA HTML CONTACTO FORMULARIO-------------------------------*/
