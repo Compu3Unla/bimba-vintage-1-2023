@@ -146,7 +146,7 @@ h1 {
 	color: brown;
 }
 
-.botonera .productos_nav:hover .menudesplegable {
+.productos_nav:hover .menudesplegable {
 	display: flex;
 	flex-direction: row;
 	
