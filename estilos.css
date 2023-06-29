@@ -327,9 +327,6 @@ a {
 }
 
 
-
-
-
 /*-------------------------------------------- QUIENES SOMOS HTML ------------------------------------------*/
 
 
@@ -376,8 +373,6 @@ a {
 	top: 963px;
 
 }
-
-
 
 
 /*-------------------------------------------- VESTIDOS HTML ------------------------------------------*/
@@ -564,16 +559,6 @@ h5{
 	flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*-----------------------FOOTER-----------------------*/
 
 footer{
@@ -609,28 +594,24 @@ footer h3 {
 }
 /*------------------divs de footer---------------------*/
 .queesbimba{
-	width: 318.72px;
+	max-width: 318px;
 	height: 358px;
-
 }
 
 .categorias{
-	width: 300px;
-	height: 357.84px;
+	height: 358px;
 	padding: 0px 40px 0px 50px;
 }
 
+
 .categorias2{
-	width: 400px;
 	height: 273px;
 	padding: 0px 40px 0px 50px;
 }
 
 
-/*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
 .contactanos{
 	display: flex;
-	width: 266px;
 	flex-direction: column;
 	padding: 0px 40px 0px 50px;
 }
@@ -651,8 +632,7 @@ footer h3 {
 }
 
 .sigamosconectados{
-	width: 500px;
-	height: 108.875px;
+	height: 110px;
 	flex-shrink: 0;
 	padding: 0px 40px 0px 50px;
 }
@@ -666,12 +646,9 @@ footer h3 {
 	gap: 5%;
 	height: 92px;
 }
-
-
-
 .imgsdepago{
-display: flex;
-align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .copyright{
@@ -795,16 +772,6 @@ flex-direction: column;
 
 /*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------EMPIEZA HTML CONTACTO FORMULARIO-------------------------------*/
 
 .contacto-info{
@@ -821,34 +788,6 @@ align-items: flex-start;
 gap: 21px;
 }
 
-	
-
-
-
-/*------------------------------------ MEDIA ----------------------------------*/
-
-
-@media screen and (max-width: 1200px){
-	#conte-item-carrusel {
-		height: 350px;
-		width: 100%;
-	}
-	
-	img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-}
-
-@media screen and (max-width: 600px){
-	
-	img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-<<<<<<< HEAD
 
 /*esta es la section de la img*/
 .politica {
@@ -876,7 +815,6 @@ width: 100%;
 	font-size: 20px;
 	line-height: 24px;
 	width: 645px;
-	color: #000000;
 	gap: 30px;
 }
 
@@ -1013,11 +951,32 @@ align-items: center;
 }
 /*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
 
-=======
+/*------------------------------------ MEDIA ----------------------------------*/
+
+
+@media screen and (max-width: 1200px){
+	#conte-item-carrusel {
+		height: 350px;
+		width: 100%;
+	}
+	
+	img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+}
+
+@media screen and (max-width: 600px){
+	
+	img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 	#conte-item-carrusel {
 		height: 250px;
 		width: 100%;
 	}
-	
 }
->>>>>>> origin/bianca
