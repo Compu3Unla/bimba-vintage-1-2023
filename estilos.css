@@ -10,32 +10,30 @@
 	box-sizing: border-box;
 } 
 
-body  {
+body{
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 18px;
 	color: #000000; 
-	width: 100%;
-	height: 100%;
 }
 
 
 /*---------------------------HEADER-------------------------- */
 
-header {
+header{
 	width: 100%;
 	height: auto;
 	background-color: black;
-	display: flex;
+	display:flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
 	padding-top: 30px;
-	
+
 	
 }
+
+
 
 h1 {
 	color: #000000;
@@ -52,27 +50,33 @@ h1 {
 	border-radius: 20px;
 }
 
-
- #barra-busqueda { 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 9px 30px;
-}  
-
-.fa-magnifying-glass {
-	position:relative;
-	right: 20px;
-	
+.botondebarrabusqueda {
+	background-color:white;
+	position: relative;
+	right: 30px;
+	top:1px;
 }
+
+
+
+
+.barra-busqueda input {
+	height: 40px;
+	border-radius: 10px;
+}
+
+ 
+
+
 
 .headericonos {
 	
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-content: flex-start;
-	gap: 30px;
+	width: 90%;
+	
 }
 
 
@@ -82,17 +86,22 @@ h1 {
 	padding: 20px;
 	color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
+	gap:40px;
+	
 	
 }
 
 
+
 .botonera  ul {
+	width: 100%;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
-	
+	justify-content: center;
+	gap:30px;
 }
 
 .botonera a {
@@ -101,14 +110,46 @@ h1 {
 }
 
 
-.iconos {  
+
+
+.productos_nav .menudesplegable  {
+	
+	display: none;
+}
+
+
+
+
+.iconosdeheader {  
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content:space-around;
 	align-items: center;
-	padding: 0px;
-	gap: 40px;
-	min-width: 290px;
+    width: 250px; 
+    
+}  
+
+  .productos_nav {
+	position: relative;
+	bottom: 9px;
+	
+}
+
+.menudesplegable {
+	position: absolute;
+    background-color: black;
+	width: 1920px;
+} 
+
+.botonera li :hover {
+	
+	color: brown;
+}
+
+.productos_nav:hover .menudesplegable {
+	display: flex;
+	flex-direction: row;
+	
 }
 
 
@@ -137,7 +178,7 @@ h3 {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 50px;
 	color: #000000;
 }
 
@@ -149,17 +190,36 @@ h4 {
 	color: #000000;
 }
 
-h5{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 64px;
-line-height: 78px;
-color: #000000;
-}
 
 /*---------------------------------------------------------- INDEX ------------------------------------------------------*/
 
+	
+
+@media screen and (max-width: 1200px){
+	#conte-item-carrusel {
+		height: 350px;
+		width: 100%;
+	}
+	img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+}
+
+@media screen and (max-width: 600px){
+	
+	img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+	#conte-item-carrusel {
+		height: 250px;
+		width: 100%;
+	}
+	
+}
 
 
 /*-------------------- PORTADA CARRUSEL ---------------------*/
@@ -180,7 +240,11 @@ color: #000000;
 	position: relative;	
 }
 
-
+/*  img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+} */
 
 .portada-carrusel-botones {
 	height: 100%;
@@ -227,7 +291,6 @@ a {
 	padding: 10px 10px 10px 10px;
 	gap: 20px;
 	height: 430px;
-	object-fit: cover;
 }
 
 .card_producto:hover {
@@ -239,7 +302,8 @@ a {
 	width: 200px;
 	height: 280px;
 	padding-bottom: 5px;
-} /*cambiar en el vestidos*/
+}
+
 
 .card_datos{
 	display: flex;
@@ -308,23 +372,24 @@ a {
 }
 
 
-/*--------------CARRUSELES PRODUCTOS----------*/
+/*--------------CARRUSELES----------*/
 
-.main-carousel {
-	width: 890px;
-	height: 600px;
-	overflow: hidden;
-	padding-top: 20px;
-}
-
-.carousel-cell {
-	height: 600px;
-	padding: 0 10px 0 10px;
-}
-.productos_categorias {
-	padding: 30px 0 10px 0;
+.wrapper {
 	
 }
+
+.wrapper .carrusel {
+	white-space: nowrap;
+}
+
+.carrusel {
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+	display: flex;
+	display: row;
+}
+
 
 
 /*-------------------------------------------- QUIENES SOMOS HTML ------------------------------------------*/
@@ -332,8 +397,11 @@ a {
 
 .titulo {
 	
-	padding-left: 20px;
+	padding-right: 20px;
+	width: 325px;
+    height: 218px;
 }
+
 
 .informacion {
 	display: flex;
@@ -342,20 +410,31 @@ a {
 
 .quienessomos {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	width: 100%;
 	height: auto;
-	padding-left: 40px;
-	padding-right: 40px;
-	position: relative;
-	top:  320px;
-	gap:20px;
+	gap:128px;
+
 }
 
-.informacion-texto {
-	font-size: 15px;
-	color: #000000;
+
+
+
+.parrafodequienessomos p {
+	
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+padding-bottom: 20px;
+
+color: #000000;
+gap:20px;
+
+	
 }
+
 
 .parrafoenbold {
 	font-style: italic;
@@ -363,16 +442,31 @@ a {
 	font-size: 18px;
 	color: #000000;
 	padding-top: 10px;
+	
+}
+
+
+
+.texto {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 20px;
+	width: 635px;
+	height: 1142px;
+	gap: 17px;
 }
 
 .iconowhatsapp {
-	position:absolute;
-	width: 49px;
-	height: 49px;
-	right: 5px;
-	top: 963px;
+position:absolute;
+width: 49px;
+height: 49px;
+right: 5px;
+top: 963px;
 
 }
+
+
 
 
 /*-------------------------------------------- VESTIDOS HTML ------------------------------------------*/
@@ -400,17 +494,13 @@ a {
 	gap: 40px;
 }
 
-.vestidos_categorias { 
-	display: flex;
-	flex-direction: column;
-	gap: 14px;
+ul { 
+display: flex;
+flex-direction: column;
+gap: 14px;
+width: 200px;
 }
 
-ul {
-	display: flex;
-	flex-direction: column;
-	gap: 14px;
-}
 .vestidos{
 	display: flex;
 	flex-direction: row;
@@ -458,584 +548,181 @@ label {
 	height: 420px;
 }
 
+
+
+
 .lifooter li {
 	
 } 
 
 
-/*--------------------------------------EMPIEZA HTML DEVOLUCIÓN-------------------------------------------*/
-
-/*-----------------------IMAGENENES DE DEVOLUCION-----------------------*/
-.imgprincipal {
-	width: 1300px;
-	/*antes puse height en: auto, pero me quedaba chic ala img*/
-	height: 1600px; 
-	background:url("img/imgs-pantalla-devolución/devolucion.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	object-fit:cover;
-}
-
-.capturadepantalla{
-	width: 402px;
-	height: 646px; 
-	background:url("img/imgs-pantalla-devolución/devolucioncaptura_.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	object-fit:cover;
-	padding-bottom: 680px;
-}
-
-/*esta es la section de la img*/
-.politica {
-	display: flex;
-	flex-direction: row;
-	align-content: flex-start;
-	gap:59px;
-	width: 100%;
-}
-/*-----------------------BLOQUES DE TEXTO/BODY DEVOLUCION-----------------------*/
-
-/*la section de los bloques:*/
-.bloquepolitica{
-	width: 100%;
-	height: 270px;
-}
-
-/*ESTA ES LA ETIQUETA SPAN, osea el texto en bold*/
-.bold{
-	font-family: 'Montserrat';
-	font-style: bold;
-	font-size: 20px;
-}
-/*el titulo principal*/
-h5{
-	/*le determino height para que haya un espacio entre el título y los bloques de texto inmersivo*/
-	width: 402px;
-	height: 270px;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 800;
-	font-size: 64px;
-	line-height: 78px;
-	color: #000000;
-}
-
-/*en el div parrafos, agregué padding para separar la img del texto (antes se superponía todo feo)*/
-.parrafos{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	width: 645px;
-	height: 114px;
-	color: #000000;
-	padding-bottom: 550px;
-}
-
-.parrafo1{
-	display: flex;
-	width: 645px;
-	height: 71px;
-	flex-direction: column;
-}
-
-.parrafo2{
-	display: flex;
-	width: 641px;
-	height: 542px;
-	flex-direction: column;
-
-}
-
-.parrafo3{
-	display: flex;
-	width: 645px;
-	height: 114px;
-	flex-direction: column;
-}
-
-/*--------------------------------------------------------------------------FOOTER-----------------------*/
+/*--------------------------------------EMPIEZA FOOTER-------------------------------------------*/
 
 footer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	background: #E5E5E5;
-}
-
-.footer-bloque{
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 50px 250px 30px;
-	border-bottom: 2px solid #A2A2A2;
-}
-
-
-.lifooter{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 21px;
-	color: #000000;
-}
-
-footer h3 {
-	padding-bottom: 20px;
-}
-/*------------------divs de footer---------------------*/
-.queesbimba{
-	max-width: 318px;
-	height: 358px;
-}
-
-.categorias{
-	height: 358px;
-	padding: 0px 40px 0px 50px;
-}
-
-
-.categorias2{
-	height: 273px;
-	padding: 0px 40px 0px 50px;
-}
-
-
-.contactanos{
-	display: flex;
-	flex-direction: column;
-	padding: 0px 40px 0px 50px;
-}
-
-.contactanos li{
-	display: flex;
-	align-items: center;
-}
-
-.contactanos img{
-	margin-right: 10px;
-}
-
-.imgs-contactanos img{
-	width:auto;
-	height: auto;
-	
-}
-
-.sigamosconectados{
-	height: 110px;
-	flex-shrink: 0;
-	padding: 0px 40px 0px 50px;
-}
-
-/*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
-.mediosdepago{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 5%;
-	height: 92px;
-}
-.imgsdepago{
-	display: flex;
-	align-items: center;
-}
-
-.copyright{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 0px;
-	width: 100%;
-	height: 66px;
-	background: #0F0F0F;
-}
-
-.imgsdepago ul{
-	display: flex;
-	align-items:center;
-	flex-direction: row;
-}
-
-.p5{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 19px;
-	letter-spacing: 0.01em;
-	text-align: left;
-	color: #FFFFFF;
-}
-
-.p4{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #000000;
-
-}
-/*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
-
-
-
-/*---------------------------EMPIEZA HTML DEVOLUCION-------------------------------------------------------*/
-
-
-.bold{
-	font-weight: 600;
-}
-/*-----------------------IMAGENENES-----------------------*/
-.imgprincipal {
-display: flex;
-align-content: flex-start;
-	
-	
-width: 1200px;
-/*antes puse height en: auto, pero me quedaba chic ala img*/
-height: 2196px; 
-background:url("img/imgs-pantalla-devolución/devolucion.jpg");
-background-repeat: no-repeat;
-background-size: contain;
-object-fit:cover;
-}
-
-.capturadepantalla{
-width: 402px;
-height: 646px; 
-background:url("img/imgs-pantalla-devolución/devolucioncaptura_.png");
-background-repeat: no-repeat;
-background-size: contain;
-object-fit:cover;
-}
-
-/*esta es la section de la img*/
-.politica {
-display: flex;
-flex-direction: row;
-align-content: flex-start;
-
-}
-/*-----------------------BLOQUES DE TEXTO/BODY-----------------------*/
-
-/*la section de los bloques:*/
-.bloquepolitica{
-width: auto;
-height: 270px;
-}
-
-/*el titulo principal*/
-h4{
-/*le determino height para que haya un espacio entre el título y los bloques de texto inmersivo*/
-width: 402px;
-height: 270px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 64px;
-color: #000000;
-}
-
-/*se superpone imagen con texto, antes le puse un padding pero el numero era muy grande*/
-.parrafos{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-width: 645px;
-height: 114px;
-color: #000000;
-
-}
-
-.parrafo1{
-display: flex;
-width: 645px;
-height: 71px;
-flex-direction: column;
-}
-
-
-/*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
-
-/*-------------------------------------EMPIEZA HTML CONTACTO FORMULARIO-------------------------------*/
-
-.contacto-info{
-display: flex;
-align-items: flex-end;
-flex-direction: column;
-gap: 32px;
-}
-
-.contacto{
 display: flex;
 flex-direction: column;
-align-items: flex-start;
-gap: 21px;
-}
-
-
-/*esta es la section de la img*/
-.politica {
-display: flex;
-flex-direction: row;
-align-content: flex-start;
+align-items: center;
+/*justify-content: space-between;*/
 width: 100%;
-
+height: 664px;
+background: #E5E5E5;
 }
 
-/*la section de los bloques:*/
-.bloquepolitica{
-	position:static;
-	width: auto;
-	padding-left: 40px;
-	top: 500px;
-}
-
-.parrafos{
-	display: flex;
-	flex-direction: column;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	width: 645px;
-	gap: 30px;
-}
-
-/*---------------------------TERMINA html DEVOLUCION---------------------------------------------------*/
-
-/*-----------------------FOOTER-----------------------*/
-
-footer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	background: #E5E5E5;
-}
-
-.footer-bloque{
+.footer1{
 box-sizing: border-box;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 50px 30px;
+padding: 20px 0px 20px 40px;;
+gap: 40px;
+width: 100%;
 border-bottom: 2px solid #A2A2A2;
 }
 
 
 .lifooter{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 21px;
-	color: #000000;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #000000;
 }
 
-.footer-bloque h3 {
-	padding-bottom: 20px;
-}
 /*------------------divs de footer---------------------*/
 .queesbimba{
-max-width: 318px;
+width: 318.72px;
 height: 358px;
+
 }
 
 .categorias{
+width: 300px;
 height: 357.84px;
-padding: 0px 40px 0px 50px;
+/*padding-left: 91px;*/
 }
 
 .categorias2{
+width: 400px;
 height: 273px;
-padding: 0px 40px 0px 50px;
+/*padding-left: 91px;*/
 }
 
 
 /*en el div contactanos se me complica hacer que los divs q contiene se separen en columnas*/
 .contactanos{
 display: flex;
+width: 250px;
+flex-direction: row;
+/*padding-left: 91px;*/
+	gap: 10px;
+}
+
+.imgsdecontactos{
+display: flex;
 flex-direction: column;
-padding: 0px 40px 0px 50px;
+width: 20px;
+height: 25px;	
+gap:15px;
+	
 }
-
-.contactanos li{
+.contactanos_info{
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	gap: 20px;
 }
 
-.contactanos img{
-	margin-right: 10px;
+.sigamosconectados{
+width: 250px;
+height: auto;
+flex-shrink: 0;
+/*padding-left: 91px;*/
 }
 
-.imgs-contactanos img{
-	width:auto;
+.sigamosconectados img {
+	width: 20px;
+	height: 20px;
+	
+
+	
+}
+
+/*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
+
+/*falta ajustar el tamaño de las tarjetas, no me acuerdo como era */
+.mediosdepago{
+display: flex;
+flex-direction: row;
+align-items: center;
+
+padding: 0px 30px;
+gap: 20px;
+width: 100%;
+height: 92px;
+}
+
+.imgsdepago{
+display: flex;
+align-items: center;
+gap: 10px;
+object-fit: cover;
+
+}
+
+.imgsdepago img {
+	width: 50px;
 	height: auto;
 	
 }
 
-.sigamosconectados{
-height: 108.875px;
-flex-shrink: 0;
-padding: 0px 40px 0px 50px;
-}
+/*aca creé un div para el qr pero no aparece en nigun lado*/
+.qr img{
+width: 60px;
+height:80px;
 
-/*-------------------ULTIMAS PARTES DEL FOOTER--------------*/
-.mediosdepago{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 5%;
-	height: 92px;
-}
-.imgsdepago{
-display: flex;
-align-items: center;
+
 }
 
 .copyright{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 0px;
-	width: 100%;
-	height: 66px;
-	background: #0F0F0F;
-}
-
-.imgsdepago ul{
-	display: flex;
-	align-items:center;
-	flex-direction: row;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 0px;
+gap: 0px;
+width: 100%;
+height: 66px;
+background: #0F0F0F;
 }
 
 .p5{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 19px;
-	letter-spacing: 0.01em;
-	text-align: left;
-	color: #FFFFFF;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #FFFFFF;
 }
+
+
+
 
 .p4{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #000000;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
 
 }
+
+.copyright img {
+	width: 20px;
+	height: 20px;
+}
+
+
 /*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
-
-/*------------------------------------ MEDIA ----------------------------------*/
-
-
-@media screen and (max-width: 1200px){
-	#conte-item-carrusel {
-		height: 350px;
-		width: 100%;
-	}
-	
-	img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-}
-
-@media screen and (max-width: 600px){
-	
-	img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-	#conte-item-carrusel {
-		height: 250px;
-		width: 100%;
-	}
-}
-
-/*-------------------------------------------@MEDIA DEL FOOTER---------------------------------------*/
-
-@media screen and (max-width: 600px){
-	
-	footer background { /*no se extiende el fondo*/
-		width: 100%;
-	}
-	
-	footer p, h3, img, li {
-		text-align: start;
-	}
-	
-	.lifooter img{
-		width: 10%;
-	}
-	
-	.sigamosconectados img {
-		width: 30%;
-	}
-	.footer-bloque {
-		flex-direction: column; /*parece funcionar*/
-	}
-	.categorias, .contactanos, .sigamosconectados {
-		width: 100%;
-		height: 100%;
-		padding-bottom: 20%;
-	}
-	
-	.sigamosconectados {
-		padding-bottom: 5%;
-	}
-	
-	.queesbimba {
-		width: 100%;
-		padding-left: 13%;
-		padding-bottom: 20%;
-		height: 100%;
-	}
-	
-	.copyright p {
-		font-size: 8px;
-	}
-	
-	.mediosdepago{
-		flex-direction: column;
-		padding-bottom: 25%;
-		padding-top: 25%;
-	}
-	
-	
-	.imgsdepago{
-		flex-direction: column;
-	}
-	.imgsdepago ul {
-		flex-direction: row;
-	}
-	
-	.codigo-seguridad{
-		padding-top: 5%;
-	}
-}
