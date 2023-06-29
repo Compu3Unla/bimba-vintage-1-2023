@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,700&display=swap&family=Alegreya+Sans+SC&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap&family=Open+Sans:wght@400;700&display=swap');
+
+
 
 * {
 	margin:0px;
@@ -8,6 +10,7 @@
 	border: 0px;	
 	list-style: none;
 	box-sizing: border-box;
+	text-decoration: none;
 } 
 
 body  {
@@ -113,10 +116,7 @@ h1 {
 }
 
 
-
-
 .productos_nav .menudesplegable  {
-	
 	display: none;
 }
 
@@ -154,6 +154,7 @@ h1 {
 	flex-direction: row;
 	
 }
+
 /*-------------------------------------------------MAIN--------------------------------------------------*/
 
 main {
@@ -206,9 +207,9 @@ color: #000000;
 /*-------------------- PORTADA CARRUSEL ---------------------*/
 
 
-#carrusel-portada{
+/*#carrusel-portada{
 	position: relative;
-}
+}*/
 
 #conte-item-carrusel{
 	width: 100%;
@@ -217,11 +218,16 @@ color: #000000;
 
 }
 
+
 .portada-item-carrusel {
 	position: relative;	
 }
 
-
+.portada-item-carrusel img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
 
 .portada-carrusel-botones {
 	height: 100%;
@@ -233,15 +239,6 @@ color: #000000;
 	justify-content: space-between;
 }
 
-.foto_card_producto {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-a {
-	text-decoration: none;
-}
 
 #conte-puntos{
 	display: flex;
@@ -258,7 +255,7 @@ a {
 }
 
 
-
+/*--------------CARRUSELES PRODUCTOS----------*/
  
 /*---------- CARD PRODUCTO ------------*/
 .card_producto {
@@ -275,6 +272,12 @@ a {
 	box-shadow: 1px 1px 8px rgba(0,0,0,0.20);
 	border-radius: 10px;
 }
+
+/*.foto_card_producto {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}*/
 
 .foto_card_producto {
 	width: 200px;
@@ -349,17 +352,18 @@ a {
 }
 
 
-/*--------------CARRUSELES PRODUCTOS----------*/
+
+/*-----------CARRUSEL PRODUCTOS ---------*/
 
 .main-carousel {
-	width: 890px;
-	height: 600px;
+	width: 1200px;
+	height: 470px;
 	overflow: hidden;
 	padding-top: 20px;
 }
 
 .carousel-cell {
-	height: 600px;
+	height: 450px;
 	padding: 0 10px 0 10px;
 }
 .productos_categorias {
@@ -367,10 +371,35 @@ a {
 	
 }
 
+/*------------------ INSTAGRAM ----------------*/
+.logo_instagram {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:10px;
+}
 
+.instagram {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	padding-bottom: 40px;
+}
 
-
-
+.instagram input {
+	background: white;
+	padding: 5px 25px 5px 25px;
+	border-radius: 20px;
+	border: 1px solid;
+	border-color: rgba(0,0,0,1.00);
+	cursor: pointer;
+	text-transform: lowercase;
+	font-size: 16px;
+	font-family: Alegreya Sans SC;
+	font-style: normal;
+	font-weight: 400;
+}
 /*-------------------------------------------- QUIENES SOMOS HTML ------------------------------------------*/
 
 .titulo {
@@ -889,29 +918,7 @@ gap: 21px;
 
 
 
-/*------------------------------------ MEDIA ----------------------------------*/
 
-
-@media screen and (max-width: 1200px){
-	#conte-item-carrusel {
-		height: 350px;
-		width: 100%;
-	}
-	
-	img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-}
-
-@media screen and (max-width: 600px){
-	
-	img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
 
 
 /*esta es la section de la img*/
@@ -1139,5 +1146,10 @@ align-items: center;
 	}
 }
 
+/*------------------------------------ MEDIA ----------------------------------*/
 
+
+@media screen and (max-width: 1200px) {
+	
+}
 
