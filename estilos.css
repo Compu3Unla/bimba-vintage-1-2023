@@ -458,9 +458,6 @@ label {
 	height: 420px;
 }
 
-
-
-
 .lifooter li {
 	
 } 
@@ -513,7 +510,7 @@ label {
 }
 /*el titulo principal*/
 h5{
-	/*le determino height para que hya un espacio entre el título y los bloques de texto inmersivo*/
+	/*le determino height para que haya un espacio entre el título y los bloques de texto inmersivo*/
 	width: 402px;
 	height: 270px;
 	font-family: 'Montserrat';
@@ -559,7 +556,7 @@ h5{
 	flex-direction: column;
 }
 
-/*-----------------------FOOTER-----------------------*/
+/*--------------------------------------------------------------------------FOOTER-----------------------*/
 
 footer{
 	display: flex;
@@ -977,6 +974,26 @@ align-items: center;
 
 	#conte-item-carrusel {
 		height: 250px;
+		width: 100%;
+	}
+}
+
+/*-------------------------------------------@MEDIA DEL FOOTER---------------------------------------*/
+
+@media screen and (max-width: 600px){
+	
+	footer background { /*no se extiende el fondo*/
+		width: 100%;
+	}
+	
+	footer p, h3, img, li {
+		text-align: center;
+	}
+	
+	.footer-bloque {
+		flex-direction: column; /*parece funcionar*/
+	}
+	.queesbimba, .categorias, .contactanos, .sigamosconectados {
 		width: 100%;
 	}
 }
