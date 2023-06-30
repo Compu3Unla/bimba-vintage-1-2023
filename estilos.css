@@ -563,6 +563,31 @@ label {
 	
 } 
 
+/*---------------------------------------FORMULARIO INDEX-------------------------------------------------*/
+
+.formulario-newsletter{
+	box-sizing: border-box;
+	background-color: black;
+	width: 100%;;
+	height: 400px;
+	padding-top: 5%;
+}
+
+
+.formulario-contenido{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 43px;
+}
+
+.formulario-contenido h2{
+	color: white;
+}
+
+.parrafo-newsletter{
+	color: white;
+}
 
 /*--------------------------------------EMPIEZA HTML DEVOLUCIÓN-------------------------------------------*/
 
