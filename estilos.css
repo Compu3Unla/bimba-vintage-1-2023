@@ -645,6 +645,25 @@ color: #000000;
 gap: 20px;
 }
 
+/*----------------------------------------HTML CONSTRUCCION-------------------------------------------------*/
+
+
+.construccion {
+	width: 100%;
+	display: flex;
+	align-self: flex-start;
+}
+
+.web-en-construccion{
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	padding-left: 25%;
+}
+
+.web-en-construccion h2{
+	padding: 50px 0px 30px;
+}
 
 /*-----------------------FOOTER-----------------------*/
 
