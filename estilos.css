@@ -35,8 +35,6 @@ header{
 	flex-direction: column;
 	align-items: center;
 	padding-top: 30px;
-
-	
 }
 
 
@@ -191,25 +189,24 @@ h4 {
 	color: #000000;
 }
 
-h5{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 64px;
-line-height: 78px;
-color: #000000;
+h5 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 78px;
+	color: #000000;
 }
 
 /*---------------------------------------------------------- INDEX ------------------------------------------------------*/
 
 
-
 /*-------------------- PORTADA CARRUSEL ---------------------*/
 
 
-/*#carrusel-portada{
+#carrusel-portada{
 	position: relative;
-}*/
+}
 
 #conte-item-carrusel{
 	width: 100%;
@@ -221,7 +218,7 @@ color: #000000;
 
 .portada-item-carrusel {
 	position: relative;	
-}
+} 
 
 .portada-item-carrusel img {
 	width: 100%;
@@ -240,7 +237,7 @@ color: #000000;
 }
 
 
-#conte-puntos{
+/*#conte-puntos{
 	display: flex;
 	justify-content: space-between;
 	gap:20px;
