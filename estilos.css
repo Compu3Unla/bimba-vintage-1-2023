@@ -149,7 +149,6 @@ h1 {
 	
 }
 
-
 /*--- header 600 ---*/
 .header_carrito {
 	display:none;
@@ -168,19 +167,12 @@ h1 {
 	justify-content: space-around;
 }
 
-#toggle {
-    display: none;
-}
-
-
-
 /*-------------------------------------------------MAIN--------------------------------------------------*/
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
 
 /*-------------------------------------------estilos tipográficos generales---------------------------------*/
 h2{
@@ -191,7 +183,6 @@ h2{
 	text-align: center;
 	color: #000000;
 }
-
 
 h3 {
 	font-family: 'Montserrat';
@@ -218,11 +209,11 @@ font-size: 64px;
 line-height: 78px;
 color: #000000;
 padding: 50px 0px;
-
-
 }
 
-
+a {
+	text-decoration: none;
+}
 /*---------------------------------------------------------- INDEX ------------------------------------------------------*/
 
 
@@ -239,7 +230,6 @@ padding: 50px 0px;
 	height: 600px;
 	overflow:hidden;
 }
-
 
 .portada-item-carrusel {
 	position: relative;	
@@ -260,22 +250,6 @@ padding: 50px 0px;
 	align-items: center;
 	justify-content: space-between;
 }
-
-
-/*#conte-puntos{
-	display: flex;
-	justify-content: space-between;
-	gap:20px;
-	position: absolute;
-	top: 530px;
-	left: 50%;
-}
-
-#conte-puntos a{
-	font-size: 70px;
-	color:rgba(110,110,110,0.65)
-}
-
 
 /*--------------CARRUSELES PRODUCTOS----------*/
  
@@ -842,6 +816,10 @@ footer{
 	background: #E5E5E5;
 }
 
+footer a {
+	text-decoration: none;
+	color: black;
+}
 .footer-bloque{
 box-sizing: border-box;
 display: flex;
@@ -1146,7 +1124,7 @@ align-items: center;
 
 	.main-carousel {
 		width: 600px;
-		height: 770px;
+		height: 790px;
 		overflow: hidden;
 		padding-top: 40px;
 	}
@@ -1245,6 +1223,12 @@ align-items: center;
 		padding-bottom: 20%;
 	}
 	
+	.contactanos p {
+		font-size: 20px;
+	}
+	.categorias li {
+		font-size: 20px;
+	}
 	.sigamosconectados {
 		padding-bottom: 5%;
 	}
@@ -1262,7 +1246,9 @@ align-items: center;
 	}
 	
 	.copyright p {
-		font-size: 8px;
+		font-size: 12px;
+		text-align: center;
+		
 	}
 	
 	.mediosdepago{
@@ -1282,12 +1268,9 @@ align-items: center;
 	.codigo-seguridad{
 		padding-top: 5%;
 	}
-}
-
-/*------------------------------------ MEDIA ----------------------------------*/
-
-
-@media screen and (max-width: 1200px) {
-	
+	.queesbimba p {
+		font-size: 20px;
+		line-height: 25px;
+	}
 }
 
