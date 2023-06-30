@@ -35,6 +35,7 @@ header{
 	flex-direction: column;
 	align-items: center;
 	padding-top: 30px;
+	
 }
 
 
@@ -109,7 +110,7 @@ h1 {
 	gap:30px;
 }  
 
-.iconosdeheader li {
+.iconosdeheader div {
 	display: flex;
 	flex-direction: column;
 	gap:10px;
@@ -148,8 +149,32 @@ h1 {
 	
 }
 
-/*-------------------------------------------------MAIN--------------------------------------------------*/
 
+/*--- header 600 ---*/
+.header_carrito {
+	display:none;
+}
+
+.header_600 {
+	display: none;
+	width: 100%;
+	background-color: black;
+}
+
+.header_600_iconos {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#toggle {
+    display: none;
+}
+
+
+
+/*-------------------------------------------------MAIN--------------------------------------------------*/
 main {
 	display: flex;
 	flex-direction: column;
@@ -205,7 +230,7 @@ padding: 50px 0px;
 
 
 #carrusel-portada{
-	position: relative;
+	
 	padding-bottom: 30px;
 }
 
@@ -213,7 +238,6 @@ padding: 50px 0px;
 	width: 100%;
 	height: 600px;
 	overflow:hidden;
-
 }
 
 
@@ -397,6 +421,13 @@ padding: 50px 0px;
 	font-family: Alegreya Sans SC;
 	font-style: normal;
 	font-weight: 400;
+}
+
+
+/*----*/
+
+.titulo_600 {
+	display: none;
 }
 /*-------------------------------------------- QUIENES SOMOS HTML ------------------------------------------*/
 
@@ -935,27 +966,184 @@ align-items: center;
 }
 /*---------------------------TERMINA FOOTER---------------------------------------------------------------*/
 
-/*-------------------------------------------@MEDIA DEL FOOTER---------------------------------------*/
+/*-------------------------------------------@MEDIA DE INDEX---------------------------------------*/
 
 @media screen and (max-width: 600px){
 
-	/*---header---*/
+	/*-----header-----*/
+	main {
+		overflow: hidden;
+	}
 	
 	header {
 		width: 100%;
+		height: 160px;
+		position: relative;
 	}
 	
-	.iconosdeheader flexitema flexitemb {
+	.headericonos {
 		display: none;
 	}
 	
-	.barra-busqueda input {
-	height: 20px;
-	width: 300px;
-	border-radius: 10px;
-}
+	.header_600 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
 	
-	/*----footer---*/
+	.iconosdeheader {
+		display: none;
+	}
+	
+	.header_carrito {
+		display: flex;
+		flex-direction: column;
+		gap: 10;
+		align-items: center;
+	}
+	
+	.barra-busqueda input {
+		height: 50px;
+		max-width: 530px;
+		border-radius: 30px;
+		padding: 10px;
+		font-size: 20px;
+	}
+	
+	.botonera {
+		display: none;
+	}
+	
+	h1 {
+		color: #000000;
+		font-family: 'Alegreya Sans';
+		font-weight: 700;
+		font-size: 30px;
+		height: 45px;
+		padding: 10px 10px 10px 10px;
+		background: #FFFFFF;
+		border-radius: 25px;
+	}
+	
+	.header_carrito img {
+		height: 45px;
+		width: 45px;
+	}
+	
+	.header_600_iconos {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	/*----*/ 
+
+	
+	.header_600_menu_hamburguesa {
+		display: flex;
+		flex-direction: column;
+		font-size: 60px;
+		font-weight: bold;
+		color: white;
+	}
+	
+	.toggle-btn {
+		display: inline-block;
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.toggle-btn span {
+			display: flex;
+			flex-direction: column;
+			font-size: 60px;
+			font-weight: bold;
+			color: white;
+			height: 2px;
+			width: 100%;
+			transition: transform 0.3s, opacity 0.3s;
+	}
+
+	.toggle-btn span:nth-child(1) {
+			top: 0;
+	}
+
+	.toggle-btn span:nth-child(2), .toggle-btn span:nth-child(3) {
+			top: 9px;
+	}
+
+	.menu {
+		  display: none;
+		  position: absolute;
+		  top: 0px;
+		  left: 0;
+		  width: 270px;
+		  padding: 10px;
+		  background-color: #00000;
+	}
+
+	.menu ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu ul li {
+		margin-bottom: 10px;
+		height: 40px;
+	}
+
+	.menu ul li a {
+		text-decoration: none;
+		color: white;
+		font-size: 16px;
+	}
+
+	#toggle:checked ~ .menu {
+		display: block;
+		transition: all .5s;
+	}
+
+	/*-------main---------*/
+	
+	/*--portada--*/
+	#conte-item-carrusel{
+		width: 100%;
+		height: 680px;
+		overflow:hidden; 
+	}
+	
+	
+	.portada-item-carrusel {
+		position: relative;	
+	} 
+
+	.portada-item-carrusel img {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		object-fit: cover;
+	}
+
+	/*--secciones*/
+	
+	.titulo_marcas_600 {
+		display: none;
+	}
+	
+	.titulo_600 {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	
+	
+	
+	/*------footer-----*/
 	
 	footer background { /*no se extiende el fondo*/
 		width: 100%;

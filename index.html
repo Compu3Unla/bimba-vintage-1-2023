@@ -27,31 +27,80 @@
 				</form> 
 			</div>
 		
-			<ul class="iconosdeheader">
-				<li class="flexitema">
+			<div class="iconosdeheader">
+				<div class="flexitema">
 					<img src="img/iconos/icono_header_carpeta.png" width="30px" height="30px" alt="icono mensajes">
 					<p>Ayuda</p>
-				</li>
-				<li class="flexitemb">
+				</div>
+				<div class="flexitemb">
 					<img src="img/iconos/icono_header_cuenta.png" width="30px" height="30px" alt="icono personas">
 					<p>Mi cuenta</p>
-				</li>
-				<li class="flexitemc">
+				</div>
+				<div class="flexitemc">
 					<img src="img/iconos/icono_header_carrito.png" width="30px" height="30px" alt="icono compras">
 					<p>Mi carrito</p>
-				</li>
-			</ul>
-		
+				</div>
+			</div>
 		</div>
+		
+<!----Este header es para la versión movil, le tenía que cambiar la estructura y es la unica forma que se me ocurrió--->
+		
+		<!----<div class="header_600_menu_hamburguesa">
+							<p>_</p>
+							<p>_</p>
+							<p>_</p>
+						</div>-->
+		
+		<div class="header_600">
+			<div class="header_600_iconos">
+				<div class="header_600_nav">
+					<input type="checkbox" id="toggle">
+					<label for="toggle" class="toggle-btn">
+						<span>_</span>
+						<span>_</span>
+						<span>_</span>
+					</label>
+
+					<nav class="menu">
+						<button>X</button>
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="vestidos.html">Productos</a></li>
+							<li><a href="#">Contacto</a></li>
+							<li><a href="#">Quiénes Somos</a></li>
+							<li><a href="devolucion.html">Politica de devolución</a></li>
+							<li><a link="a">Blog</a></li>
+							<li><a href="a">Bimba vintage en las revistas</a></li>
+						</ul>
+					 </nav>
+				</div>
+				<h1>Bimba Vintage</h1>
+				<div class="header_carrito">
+					<img src="img/iconos/icono_header_carrito.png" width="30px" height="30px" alt="icono compras">
+				</div>
+			</div>
+			<div class="container">
+					<form method="post" action="" target="_blank" enctype="text/plain" class="form">
+						<div class="barra-busqueda">
+							<input type="search" name="buscador" id="buscador2" placeholder="¿Qué estás buscando?" size="50px" height="30px">
+							<button class="botondebarrabusqueda"><img src="img/iconos/icono_header_lupa.png" width="16px" height="16px" alt="lupa"></button>
+						</div>
+					</form> 
+				</div>
+		</div>
+		
+		
+		
+<!---------------------------------------------------------->
 		
 		<nav class="botonera">
 			<ul>
-				<li><a href="a">Inicio</a></li>
-				<li class="productos_nav"><a href="a">Productos</a><img src="img/iconos/icono_flecha.png" width="13px" height="13px" alt="flecha de header">
+				<li><a href="index.html">Inicio</a></li>
+				<li class="productos_nav"><a href="vestidos.html">Productos</a><img src="img/iconos/icono_flecha.png" width="13px" height="13px" alt="flecha de header">
 					
 				<ul class="menudesplegable">
 						<div>
-							<li><a href="a">Vestidos</a></li>
+							<li><a href="vestidos.html">Vestidos</a></li>
 							<li><a href="a">Vestidos Vintage</a></li>
 							<li><a href="a">Vestidos Proloved</a></li>
 							<li><a href="a">Vestidos Marcas Internacionales</a></li>
@@ -90,10 +139,10 @@
 						</div>
 					</ul>
 				</li> 
-				<li><a href="a">Contacto</a></li>
-				<li><a href="a">Quiénes somos</a></li>
-				<li><a href="a">Politica de devolución</a></li>
-				<li><a href="a">Blog</a></li>
+				<li><a href="">Contacto</a></li>
+				<li><a href="quienes-somos.html">Quiénes somos</a></li>
+				<li><a href="devolucion.html">Politica de devolución</a></li>
+				<li><a link="a">Blog</a></li>
 				<li><a href="a">Bimba vintage en las revistas</a></li>
 				
 				
@@ -299,7 +348,14 @@
 			</form>
 		</div>
 		<section class="productos_categorias">
-			<h2>Marcas internacionales y vintage</h2>
+			<h2 class="titulo_marcas_600">Marcas internacionales y vintage</h2>
+			<!--este es el titulo para versión movil-->
+			<div class="titulo_600">
+				<h2>Marcas</h2>
+				<h2>internacionales</h2>
+				<h2> y vintage</h2>
+			</div>
+			<!-------->
 				<div class="main-carousel">
 					<div class="carousel-cell">
 						<div class="card_producto">	
