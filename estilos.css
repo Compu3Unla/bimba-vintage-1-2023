@@ -592,18 +592,14 @@ label {
 /*-----------------------IMAGENENES DE DEVOLUCION-----------------------*/
 .imgprincipal {
 	display: flex;
-	align-self:flex-start;
+	align-self: stretch;
 	width: 100%;
-	max-height: inherit;
-	height: 1400px;
-	background:url("img/imgs-pantalla-devolución/devolucion.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
+	height: 100%;
 	object-fit:cover;
 }
 
 .capturadepantalla{
-	width: 40%;
+	width: 100%;
 	height: 400px; 
 	background:url("img/imgs-pantalla-devolución/devolucioncaptura_.png");
 	background-repeat: no-repeat;
@@ -624,7 +620,7 @@ label {
 /*la section de los bloques:*/
 .bloquepolitica{
 	width: 100%;
-	height: 270px;
+	padding-right: 15%;
 }
 
 /*ESTA ES LA ETIQUETA SPAN, osea el texto en bold*/
